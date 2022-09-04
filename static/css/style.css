@@ -89,6 +89,12 @@ footer {
   height: 200px;
   background-size: cover;
 }
+.conts{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin-top: 29px;
+}
 .index_loc,
 .index_tel,
 .index_fax,
@@ -98,18 +104,19 @@ footer {
 }
 .links{
   font-size: 30px;
-  margin: 19px;
+  margin: 25px;
   display: flex;
   flex-direction: column;
 }
 .links a{
 text-decoration: none;
 color: white;
+margin: 9px;
 
 }
 .links a:hover{
-  font-size: 32px;
-  transition: 0.5s;
+color: black; 
+ transition: 0.5s;
 
 }
 .icons{
@@ -124,8 +131,7 @@ color: white;
 }
 .icons i:hover{
   transition: 0.5s;
-    font-size: larger;
-}
+color: black;}
 
 /* CONTACT */
 .cont {
@@ -151,7 +157,7 @@ color: white;
   box-shadow: 2px 2px 9px rgb(201, 33, 33);
 }
 .cont p {
-    margin-top: 12px;
+    margin-top: 9px;
   font-size: 19px;
   font-weight: bold;
 }
@@ -176,6 +182,7 @@ color: white;
 }
 i {
   font-size: 30px;
+  margin-bottom: 12px;
 }
 .contact_detials {
   position: absolute;
