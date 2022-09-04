@@ -1,0 +1,44 @@
+{% extends 'base.html' %} {% block head %}
+<title>about</title>
+{% endblock head %} {% block body %}
+<div class="head">
+    <div class="left">
+        <img src="{{url_for('static',filename='image/logo.jpeg')}}">
+      <h1>my web page</h1>
+
+    </div>
+  
+    <div class="right">
+      <a href=" {{url_for('index')}}"> Home</a>
+      <a href=" {{url_for('contact')}}"> Contact</a>
+      <a href=" {{url_for('about')}}"> About</a>
+    </div>
+  </div>
+
+<div class="center">
+  <div class="center_item">
+  <p> Fresh, Safe <br>
+     Quatity Meats</p>
+     <img src="{{url_for('static',filename='image/download (1).jpeg')}}">
+  </div>
+  <div class="center_item">
+    <img src="{{url_for('static',filename='image/logo.jpeg')}}">
+
+  </div>
+  <div class="center_item">
+    <img src="{{url_for('static', filename='image/images.jpeg')}}">
+
+  </div>
+  <div class="center_item">
+  <p> We Provide <br>
+    Best Meat</p>
+    <img src="{{url_for('static',filename='image/images1.jpeg')}}">
+
+  </div>
+</div>
+
+ 
+<footer> 
+  <p> </p>
+</footer>
+{% endblock body %}

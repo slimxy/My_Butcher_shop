@@ -1,0 +1,76 @@
+{% extends 'base.html' %} {% block head %}
+<title>contact</title>
+{% endblock head %} 
+{% block body %}
+<div class="head">
+  <div class="left">
+    <img src="{{url_for('static',filename='image/logo.jpeg')}}">
+    <h1>my web page</h1>
+  </div>
+
+  <div class="right">
+    <a href=" {{url_for('index')}}"> Home</a>
+    <a href=" {{url_for('contact')}}"> Contact</a>
+    <a href=" {{url_for('about')}}"> About</a>
+  </div>
+</div>
+<div class="cont">
+  <div class="loc">
+        <i class="fa fa-map-marker"></i>
+    <p>OUR MAIN OFFICE</p>
+    <h4>
+      NO# 23 weedfffffff <br />
+      Jos North, Plateau State.
+    </h4>
+  </div>
+  <div class="tel">
+    <i class="fas fa-phone"></i>
+    <p>PHONE NUMBER</p>
+    <h4>
+      +2349999999 <br />
+      +2349999999
+    </h4>
+  </div>
+  <div class="mail">
+    <i class="fas fa-envelope"></i>
+    <p>EMAIL</p>
+    <h4>heello@mail.com</h4>
+  </div>
+  <div class="fax">
+        <i class="fas fa-fax"></i>
+        <p>FAX</p>
+    <h4>1-2349999999</h4>
+  </div>
+</div>
+<div class="contact_info">
+    <p> Contact info </p>
+    <h4> 
+        Lorem ipsum dolor sit amet consectetur <br>
+        adipisicing elit. Laborum ab ad, repellat <br>
+        sequi eum reiciendis eum reiciendis.<br>
+        Lorem ipsum dolor sit amet consectetur <br>
+        adipisicing elit. Laborum ab ad, repellat <br>
+        sequi eum reiciendis eum reiciendis.<br>   
+    </h4>
+    <img src="{{ url_for('static', filename='image/images1.jpeg')}}">
+     </div>
+      <div class="contact_detials">
+       <div class="inp">
+        Email  <br>
+        <input type="mail" placeholder="Enter a valid email addres" > <br>
+       </div>
+       <div class="inp">
+        Name <br>
+        <input type="text"  placeholder="Enter name"> <br>
+        </div>
+            <div class="inp">
+        Message 
+        <p id="enter"> Enter Message </p>
+        <br>
+        <textarea > </textarea>
+            </div>
+
+        <input type="submit"  id="submit">
+      </div>
+
+{% endblock body %}
