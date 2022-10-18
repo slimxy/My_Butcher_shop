@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(202, 183, 183);
+}
+.head {
+  /* position: fixed; */
+  width: 100%;
+  display: flex;
+  z-index: 9;
+  justify-content: space-between;
+  margin: 7px 0;
+  overflow: hidden;
+}
+.left {
+  display: flex;
+  margin-left: 12px;
+
+}
+.left h1{
+  margin-top: 20px;
+  color: rgb(230, 26, 26);
+  font-size: 40px;
+}
+.left img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.right a {
+  text-decoration: none;
+  font-size: 35px;
+  color: rgb(230, 26, 26);
+  margin: 19px;
+}
+.right a:hover {
+  color: white;
+  transition: 0.5s;
+}
+/* INDEX */
+.center {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 19px;
+  box-shadow: 1px 7px 22px rgb(114, 100, 100);
+}
+.center_item {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.center_item p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 29px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+.center img {
+  width: 300px;
+  height: 305px;
+}
+.center_item:first-of-type {
+  object-fit: cover;
+  border-top-left-radius: 9px;
+  background: rgb(230, 26, 26);
+}
+.center_item:first-of-type img,
+.center_item:last-of-type img {
+    margin-top: 12px;
+  width: 300px;
+  height: 209px;
+}
+.center_item:last-of-type {
+  border-bottom-right-radius: 19px;
+  border-top: 2px solid rgb(230, 26, 26);
+  background: rgb(255, 254, 254);
+}
+
+footer {
+  margin: 0;
+  position: absolute;
+  top: 1020px;
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  background: rgb(230, 26, 26);
+  height: 240px;
+  background-size: cover;
+}
+.conts{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin-top: 29px;
+}
+.index_loc,
+.index_tel,
+.index_fax,
+.index_mail {
+    margin: 12px 20px 20px 0;
+    color: white;
+}
+.links{
+  font-size: 30px;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.links a{
+text-decoration: none;
+color: white;
+margin: 9px;
+
+}
+.links a:hover{
+color: black; 
+ transition: 0.5s;
+
+}
+.icons{
+    cursor: pointer;
+    margin: 19px;
+    display: flex;
+    flex-direction: column;
+}
+.icons i {
+    margin: 5px;
+    color: white;
+}
+.icons i:hover{
+  transition: 0.5s;
+color: black;}
+
+/* CONTACT */
+.cont {
+  position: absolute;
+  top: 19%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+margin-left: 60px;
+}
+.loc,
+.tel,
+.fax,
+.mail {
+  background: rgb(230, 26, 26);
+  color: white;
+  padding: 23px;
+  margin: 20px;
+  width: 220px;
+  height: 120px;
+  border-radius: 12%;
+  border: 2px solid white;
+  text-align: center;
+  box-shadow: 2px 2px 9px rgb(201, 33, 33);
+}
+.cont p {
+    margin-top: 9px;
+  font-size: 19px;
+  font-weight: bold;
+}
+.contact_info {
+  position: absolute;
+  top: 375px;
+  margin-left: 32px;
+  font-weight: bold;
+  color: rgb(248, 245, 245);
+}
+.contact_info p {
+  font-size: 39px;
+  color:  rgb(230, 26, 26);
+  text-shadow: 2px 2px 2px  rgb(231, 94, 94);
+}
+.contact_info img {
+    margin-top: 20px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+i {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+.contact_detials {
+  position: absolute;
+  top: 350px;
+  left: 60%;
+  /* text-align: center; */
+}
+.inp {
+  color: white;
+  font-size: 23px;
+  /* position: relative; */
+  margin: 10px 0;
+  border-bottom: 2px solid #fcf6f6;
+  margin-right: 29px;
+}
+
+input {
+  font-size: 17px;
+  color: rgb(46, 43, 43);
+  background: none;
+  outline: none;
+  border: none;
+  width: 400px;
+  height: 40px;
+}
+#enter {
+  font-size: 17px;
+  color: #686464;
+}
+textarea {
+  position: relative;
+  top: -25px;
+  width: 400px;
+  height: 90px;
+  color: rgb(46, 43, 43);
+  font-size: 15px;
+  background: none;
+  outline: none;
+  border: none;
+}
+#submit {
+  border: 2px solid white;
+  outline: block;
+  background: rgb(230, 26, 26);
+  color: rgb(245, 245, 245);
+  font-size: 19px;
+  font-weight: bold;
+  margin: 12px 0 79px 0;
+  border-radius: 12px;
+}
+#submit:hover {
+  transition: 0.5s;
+  border: 3px solid white;
+  background: rgb(235, 145, 145);
+  color: rgb(230, 26, 26);
+}
+
+/* About */
+.pic{
+  position: absolute;
+top: 400px;
+width: 100%;
+}
